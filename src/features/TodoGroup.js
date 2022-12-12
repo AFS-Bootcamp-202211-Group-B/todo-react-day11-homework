@@ -2,8 +2,9 @@ import React from 'react'
 import TodoItem from './TodoItem'
 
 export default function TodoGroup(props) {
-    const todoMap = Array(props.size).fill(0);
-  return todoMap.map((item,index) => {
-    return <TodoItem key={index} />;
-  })
+    const todoMap = props.textList;
+    console.log(props.textList);
+  return todoMap.map((item,index) => { 
+    return <TodoItem key={index} text={item}/>;
+  });
 }

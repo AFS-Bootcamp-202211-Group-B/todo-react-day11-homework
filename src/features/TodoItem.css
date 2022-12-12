@@ -1,9 +1,7 @@
 .box{
-    text-align: center;
     width: 50%;
     padding: 10px;
     border: 1px solid black;
-    margin: auto;
     margin-bottom: 30px;
-
+    margin: auto;
 } 
