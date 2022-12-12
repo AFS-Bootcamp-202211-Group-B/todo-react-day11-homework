@@ -14,7 +14,7 @@ export default function TodoList() {
         textList.push(text);
     }
     return (
-        <div>
+        <div class= "todoList">
             <TodoGroup textList={textList} size={size}/>
             <TodoGenerator addSize={addSize} editText={editText}/>
         </div>

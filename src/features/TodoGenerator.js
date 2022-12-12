@@ -15,7 +15,7 @@ export default function TodoGenerator(props) {
     }
   return (
     <div>
-        <input type="text" name="todoText" onChange={handleChange}/> <button onClick={updateTodoItem}>Add</button> 
+        <input type="text" name="todoText" onChange={handleChange}/> <button onClick={updateTodoItem} className="button-9">Add</button> 
     </div>
   )
 }

@@ -6,3 +6,4 @@ export default function TodoItem(props) {
     <div className="box"><p>{props.text}</p></div>
   )
 }
+
