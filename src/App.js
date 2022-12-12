@@ -1,11 +1,12 @@
 import './App.css';
-import TodoItem from './features/TodoItem';
-
+import TodoGroup from './features/TodoGroup';
+import {useState} from "react";
 function App() {
+  const [size,setSize] = useState(3);
   return (
     <div className="App">
       <h1>Todo App</h1>
-      <TodoItem/>
+      <TodoGroup size={size}/>
     </div>
   );
 }
