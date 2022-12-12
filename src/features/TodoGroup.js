@@ -1,5 +1,8 @@
 import React from "react";
+import TodoItem from "./TodoItem";
 
-export default function TodoGroup() {
-    return <div>TodoGroup</div>;
+export default function TodoGroup(props) {
+    return Array(props.items).map((item, index) => {
+        return <TodoItem item={item} />;
+    });
 }
