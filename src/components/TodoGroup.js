@@ -1,10 +1,16 @@
 import React from 'react'
 import TodoItem from './TodoItem'
 
-export default function TodoGroup() {
+export default function TodoGroup(props) {
   return (
     <div>
-        <TodoItem/>
+        {
+          props.todoList.map(
+            (todoItem,index)=>{
+              <TodoItem item={todoItem} key={index}/>
+            }
+          )
+        }
     </div>
   )
 }

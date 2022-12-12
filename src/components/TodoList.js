@@ -11,7 +11,7 @@ export default function TodoList() {
     <div>
 
         {todoList}
-        <TodoGroup/>
+        <TodoGroup todoList={todoList}/>
         <TodoGenerator onCreateTodo={onCreateTodoHandler}/>
     </div>
   )
