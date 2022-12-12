@@ -1,4 +1,5 @@
-import React,{useState}from 'react'
+import React,{useState}from 'react';
+import "./TodoGenerator.css"
 
 export default function TodoGenerator(props) {
     const addSize = props.addSize;
@@ -15,7 +16,7 @@ export default function TodoGenerator(props) {
     }
   return (
     <div>
-        <input type="text" name="todoText" onChange={handleChange}/> <button onClick={updateTodoItem} className="button-9">Add</button> 
+        <input type="text" name="todoText" onChange={handleChange} className="textinput"/> <button onClick={updateTodoItem} className="button-9">Add</button> 
     </div>
   )
 }
