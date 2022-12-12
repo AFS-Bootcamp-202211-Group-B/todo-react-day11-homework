@@ -1,7 +1,13 @@
 import React from 'react'
 
-export default function TodoGenerator() {
+export default function (props) {
+  const createNewTodo = () => {
+    props.onCreateNewTodo(document.getElementById("todoInput").value)
+  }
   return (
-    <div>TodoGenerator</div>
+    <div>
+      <input id="todoInput" />
+      <button onClick={createNewTodo}>add</button>
+    </div>
   )
 }
