@@ -4,12 +4,12 @@ import TodoItem from './TodoItem'
 export default function TodoGroup(props) {
   return (
     <div>
-        {
-          props.todoList.map(
-            (todoItem,index)=>
-             <TodoItem item={todoItem} key={index}/>
-          )
-        }
+      {
+        props.todoList.map(
+          (todoItem, index) =>
+            <TodoItem item={todoItem} key={index} />
+        )
+      }
     </div>
   )
 }
