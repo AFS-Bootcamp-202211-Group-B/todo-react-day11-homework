@@ -1,12 +1,12 @@
 import './App.css';
 import React from 'react';
-import TodoGroup from './features/TodoGroup';
+import TodoList from './features/TodoList';
 
 function App() {
   return (
     <div className="App">
       <h1>Todo App</h1>
-      <TodoGroup size={3} />
+      <TodoList />
     </div>
   );
 }
