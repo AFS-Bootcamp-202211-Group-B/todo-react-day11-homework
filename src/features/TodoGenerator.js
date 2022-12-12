@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './TodoGenerator.css';
 
 
 export default function TodoGenerator(props) {
@@ -15,7 +14,7 @@ export default function TodoGenerator(props) {
     return (
       <div>
         <input type="text" name="text" min={""} value={text} />
-        <button style={{color: "red"}} onclick={addList}>add</button>
+        <button  onclick={addList}>add</button>
       </div>
     );
   
