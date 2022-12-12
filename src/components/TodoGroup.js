@@ -6,9 +6,8 @@ export default function TodoGroup(props) {
     <div>
         {
           props.todoList.map(
-            (todoItem,index)=>{
-              <TodoItem item={todoItem} key={index}/>
-            }
+            (todoItem,index)=>
+             <TodoItem item={todoItem} key={index}/>
           )
         }
     </div>
