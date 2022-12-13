@@ -3,6 +3,7 @@ import TodoItem from './TodoItem';
 
 export default function TodoGenerator(props){
 
+    
     const {updateMessageList} = props;
     const [message, setMessage] = useState('');
     const onChange = (event) => {
